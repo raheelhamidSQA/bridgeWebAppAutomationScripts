@@ -1,0 +1,10 @@
+{
+  "webServer": "https://bridge2ps.app",
+  "webLink": "https://bridge2ps.auth.us-west-2.amazoncognito.com/login?client_id=1dhri7u2m7l2tqqs4mda0inh8e&redirect_uri=https%3A%2F%2Fbridge2ps.app%2F_oauth%2Ftestbridge2ps&response_type=code&state=eyJsb2dpblN0eWxlIjoicmVkaXJlY3QiLCJjcmVkZW50aWFsVG9rZW4iOiJ1V1Z3WElRYVFmNkM5WEJRODdPTXJsRkVrOTlRSF9neFdyZHdsLWo1VTREIiwiaXNDb3Jkb3ZhIjpmYWxzZSwicmVkaXJlY3RVcmwiOiJodHRwczovL2JyaWRnZTJwcy5hcHAvaG9tZSI%3D&scope=openid",
+  "proUserUsername": "testingpro.raheel.m4ps.assoc",
+  "proUserPassword": "R@heelH@mid1@#",
+  "basicUserUsername": "testingbasic.raheel.m4ps.assoc",
+  "basicUSerPassword": "R@heelH@mid1@#",
+  "nonPsUserUsername": "testingnonps.raheel.m4ps.assoc",
+  "nonPsUserPassword": "R@heelH@mid1@#"
+}
