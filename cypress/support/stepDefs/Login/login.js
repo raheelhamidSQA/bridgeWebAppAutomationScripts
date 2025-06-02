@@ -13,3 +13,10 @@ Given('the pro user is able to login', () => {
   cy.loginByCognitoProUser();
 
 });
+
+
+
+Given('the Non PS user is able to login', () => {
+  cy.loginByCognitoNonPSUser();
+
+});
