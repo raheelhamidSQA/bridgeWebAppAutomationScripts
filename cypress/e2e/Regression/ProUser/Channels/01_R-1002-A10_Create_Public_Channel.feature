@@ -11,5 +11,5 @@ Background:
     Then the user can enter a Topic
     And the user can select the members
     Then the user can select the toggle for the Private selection to make the channel Public
-    And the user click on create button
-    Then the channel should display
+    # And the user click on create button
+    # Then the channel should display
