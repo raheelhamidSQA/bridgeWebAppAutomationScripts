@@ -24,12 +24,9 @@ module.exports = defineConfig({
       cognitoDomain: 'bridge2ps.auth.us-west-2.amazoncognito.com'
     },
     specPattern: "cypress/e2e/**/*.feature"
-
   },
-
-  reporter: 'junit',
+  reporter: 'mocha-multi-reporters',
   reporterOptions: {
-    mochaFile: 'cypress/results/results-[hash].xml',
-    toConsole: true
+    configFile: "reporter-config.json"
   }
 });

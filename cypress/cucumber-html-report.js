@@ -1,16 +1,17 @@
-const report = require('multiple-cucumber-html-reporter');
+const reporter = require('multiple-cucumber-html-reporter');
 
-report.generate({
-    jsonDir: 'cypress/cucumber.json',
-    reportPath: './reports/cucumber-htmlreport.html',
-    metadata:{
-        browser:{
-            name: 'chrome'
-        },
-        device: 'Local Test machine',
-        platform: {
-            name: 'ubuntu',
-            version: '16.04'
-        }
+reporter.generate({
+  jsonDir: 'cypress/results',          // <--- path to your results.json directory
+  reportPath: 'cypress/results/html',  // <--- path for the report output
+  metadata: {
+    browser: {
+      name: 'chrome',
+      version: '114'
+    },
+    device: 'Local test machine',
+    platform: {
+      name: 'osx',
+      version: 'Ventura'
     }
-})
+  }
+});
