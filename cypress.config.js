@@ -15,10 +15,12 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     env: {
-      username: 'testingpro.raheel.m4ps.assoc',
+      username: 'user.automator.m4ps.assoc',
       password: 'R@heelH@mid1@#',
       nonPSusername: 'testingnonps.raheel.m4ps.assoc',
       nonPSpassword: 'R@heelH@mid1@#',
+      testUsername: 'practiceusercreation.raheel.ydsp-tx',
+      testPassword: 'R@heelH@mid1@#',
       COGNITO_USER_POOL_ID: 'us-west-2_abcXYZ',
       COGNITO_CLIENT_ID: '1dhri7u2m7l2tqqs4mda0inh8e',
       cognitoDomain: 'bridge2ps.auth.us-west-2.amazoncognito.com'

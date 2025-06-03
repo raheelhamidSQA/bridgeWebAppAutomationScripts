@@ -9,13 +9,13 @@ Then('the user select the 3 dots icon from the member {string}', (user) => {
     .next('div.rcx-box--animated.rcx-option__menu-wrapper')
     .find('button[title="More"]')
     .should('be.visible')
-    .click();
+    .click({force:true});
 });
 
 
 And('the user select the {string}', (removeFromRoom) => {
   cy.xpath('(//*[contains(text(), "'+removeFromRoom+'")])[1]').click();
-
+  cy.wait(5000)
   
 });
 

@@ -17,4 +17,5 @@
 require('cypress-xpath');
 import './commands/01-command-login';
 import './commands/02-command-channel';
+import './commands/03-command-generic';
 
