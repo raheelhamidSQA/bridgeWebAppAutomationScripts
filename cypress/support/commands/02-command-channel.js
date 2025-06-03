@@ -29,3 +29,23 @@ Cypress.Commands.add('selectChannelMembers', () => {
   cy.get('.rcx-css-heem01 > :nth-child(2) > .rcx-label').click({force:true})
 
 })
+
+Cypress.Commands.add('channelNotAppear', () => {
+  cy.get('@channelName').then((channelName) => {
+    cy.get('[data-viewport-type="element"]').should('not.contain', channelName)
+    
+  })
+})
+
+Cypress.Commands.add('archiveChannelSearch', () => {
+
+  cy.get('@channelName').then((channelName) => {
+    cy.get('[title="Directory"] > .rcx-box').click()
+    cy.wait(5000)
+    cy.get('.rcx-tabs__wrapper > :nth-child(1)').click()
+    cy.wait(5000)
+    cy.get('.rcx-css-654uuc > .rcx-label > .rcx-box--animated').type(channelName)
+    cy.get('.rcx-table__row--action > :nth-child(1)').should('contain', channelName)
+
+  })
+})
