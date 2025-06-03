@@ -8,4 +8,5 @@ Then('the user select the 3 dots icon from the team {string}', (teamValue) => {
   .find('button[data-testid="menu"]')
   .should('be.visible')
   .click();
+  
 });
