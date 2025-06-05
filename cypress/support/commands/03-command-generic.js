@@ -5,5 +5,9 @@ Cypress.Commands.add('logout', () => {
     cy.clearCookies();
     cy.clearLocalStorage();
     
-    
+})
+
+Cypress.Commands.add('waitElement', () => {
+    cy.wait(3000)
+
 })

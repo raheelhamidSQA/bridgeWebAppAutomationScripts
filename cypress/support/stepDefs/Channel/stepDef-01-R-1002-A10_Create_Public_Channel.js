@@ -49,3 +49,9 @@ Then('the channel should display', () => {
   })
 
 });
+
+
+And('the user wait for an element to appear', () => {
+  cy.waitElement()
+
+});

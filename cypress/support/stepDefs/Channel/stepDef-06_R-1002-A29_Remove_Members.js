@@ -14,7 +14,7 @@ Then('the user select the 3 dots icon from the member {string}', (user) => {
 
 
 And('the user select the {string}', (removeFromRoom) => {
-  cy.xpath('(//*[contains(text(), "'+removeFromRoom+'")])[1]').click();
+  cy.xpath('(//*[contains(text(), "'+removeFromRoom+'")])[1]').click({froce:true});
   cy.wait(5000)
   
 });

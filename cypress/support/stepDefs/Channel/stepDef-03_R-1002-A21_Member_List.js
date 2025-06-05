@@ -21,7 +21,7 @@ And('the user is able to select the filter to All', () => {
     cy.log(filter)
     if (filter === "Online"){
       cy.get('.rcx-select').click()
-      cy.xpath('//div[6]/div[2]/div/div/div/li[2]/div/div').click()
+      cy.xpath('//div[2]/div/div/div/li[2]/div/div').click()
 
     }
   })
@@ -33,7 +33,7 @@ And('the user is able to select the filter to Online', () => {
     cy.log(filter)
     if (filter === "All"){
       cy.get('.rcx-select').click()
-      cy.xpath('//div[6]/div[2]/div/div/div/li[1]/div/div').click()
+      cy.xpath('//div[2]/div/div/div/li[1]/div/div').click()
 
     }
   })

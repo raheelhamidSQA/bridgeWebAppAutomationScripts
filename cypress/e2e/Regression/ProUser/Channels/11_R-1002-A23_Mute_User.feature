@@ -41,6 +41,7 @@ Background:
 
     And the user open the channel
     And the user select the members list
+    And the user is able to select the filter to All
 
     Then the user select the 3 dots icon from the member "practiceUserCreation"
     And the user select the "Unmute user"
@@ -51,4 +52,4 @@ Background:
 
     Then the user can search for the archived channel and it should appear in the search resuts
     And the user open the searched channel
-    And the user can see the message textarea "Message"
+    And the user sends the message to the channel "This is a test message for unmuting."
