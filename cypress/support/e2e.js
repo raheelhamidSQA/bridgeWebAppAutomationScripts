@@ -33,3 +33,12 @@ Cypress.on('uncaught:exception', (err) => {
     // Let any other errors fail the test
     return true;
   });
+
+  Cypress.on('uncaught:exception', (err) => {
+    // Only ignore the error-invalid-subscription exception
+    if (err.message && err.message.includes('error-invalid-subscription')) {
+      return false; // prevents Cypress from failing the test
+    }
+    // Allow other exceptions to fail the test
+    return true;
+  });

@@ -27,16 +27,20 @@ Background:
     And the user select "Yes, mute user!" option
 
     Then the user logouts from the application
+    #Main User logouts
+
+    #Test user is logging in
     And the test user is able to login
 
-    Then the user can search for the archived channel and it should appear in the search resuts
+    Then the user can search for the channel and it should appear in the search results
     And the user open the searched channel
     And the user should see the channel is "This room is read only"
-
-
     Then the user logouts from the application
+    #Test user logouts
+
+    #Main User logging in
     And the pro user is able to login
-    Then the user can search for the archived channel and it should appear in the search resuts
+    Then the user can search for the channel and it should appear in the search results
     And the user open the searched channel
 
     And the user open the channel
@@ -45,11 +49,11 @@ Background:
 
     Then the user select the 3 dots icon from the member "practiceUserCreation"
     And the user select the "Unmute user"
-
-
     Then the user logouts from the application
-    And the test user is able to login
+    #Main User logouts
 
-    Then the user can search for the archived channel and it should appear in the search resuts
+    #Test user is logging in
+    And the test user is able to login
+    Then the user can search for the channel and it should appear in the search results
     And the user open the searched channel
     And the user sends the message to the channel "This is a test message for unmuting."

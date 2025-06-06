@@ -48,7 +48,7 @@ And('the user verifies channel not appearing in the message list', () => {
   
 });
  
-Then('the user can search for the archived channel and it should appear in the search resuts', () => {
+Then('the user can search for the channel and it should appear in the search results', () => {
   cy.archiveChannelSearch()
 
 });

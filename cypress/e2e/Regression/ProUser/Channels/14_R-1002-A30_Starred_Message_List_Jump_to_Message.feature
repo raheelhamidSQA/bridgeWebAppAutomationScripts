@@ -1,10 +1,10 @@
-Feature: Ignore User
+Feature: Starred Message
   As a Pro User
-  I am able to Ignore the user
+  I am able to Starred the message
 Background:
   Given the pro user is able to login
 
-  Scenario: R-1002-A24: Pinned Message List - Jump to Message
+  Scenario: R-1002-A30_Starred_Message_List_Jump_to_Message
     When the user is able to create the plus icon button
     Then the user click "Channel"
     Then the user can enter the name of the channel

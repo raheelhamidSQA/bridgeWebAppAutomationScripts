@@ -4,7 +4,7 @@ And('the user open the user profile {string}', (userProfile) => {
 });
 
 
-And('the user click on 3 dot icon from the user profile', () => {
+And('the user click on 3 dot icon from the profile', () => {
   cy.get('button[title="More"]').click({force: true})
 
 });
