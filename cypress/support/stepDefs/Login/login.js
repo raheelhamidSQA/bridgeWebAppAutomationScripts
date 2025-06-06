@@ -20,3 +20,9 @@ Given('the Non PS user is able to login', () => {
   cy.loginByCognitoNonPSUser();
 
 });
+
+
+Given('the test user is able to login', () => {
+  cy.loginByCognitoTestUser();
+
+});

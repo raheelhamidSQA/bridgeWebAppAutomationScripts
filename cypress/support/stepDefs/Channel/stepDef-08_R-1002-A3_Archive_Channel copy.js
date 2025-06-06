@@ -48,8 +48,13 @@ And('the user verifies channel not appearing in the message list', () => {
   
 });
  
-Then('the user can search for the archived channel and it should appear in the search resuts', (roomArchived) => {
+Then('the user can search for the archived channel and it should appear in the search resuts', () => {
   cy.archiveChannelSearch()
 
+});
+
+
+Then('the user should not able to see the {string}', (deleteChannel) => {
+  cy.get('.rcx-css-iag4sp').should('not.contain', deleteChannel);
 
 });

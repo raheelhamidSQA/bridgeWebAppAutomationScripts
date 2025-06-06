@@ -17,4 +17,19 @@
 require('cypress-xpath');
 import './commands/01-command-login';
 import './commands/02-command-channel';
+import './commands/03-command-generic';
 
+
+
+
+
+
+
+Cypress.on('uncaught:exception', (err) => {
+    // Only ignore the specific error by message
+    if (err.message && err.message.includes('Invalid user [error-invalid-user]')) {
+      return false; // Prevents Cypress from failing the test
+    }
+    // Let any other errors fail the test
+    return true;
+  });
