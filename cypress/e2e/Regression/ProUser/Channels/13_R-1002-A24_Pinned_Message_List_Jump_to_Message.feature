@@ -1,6 +1,6 @@
-Feature: Ignore User
+Feature: Pinned Message
   As a Pro User
-  I am able to Ignore the user
+  I am able to Pinned the message
 Background:
   Given the pro user is able to login
 

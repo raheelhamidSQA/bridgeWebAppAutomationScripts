@@ -28,6 +28,6 @@ Background:
     And the user select the "Unignore"
 
     And the user open the user profile "practiceUserCreation"
-    And the user click on 3 dot icon from the user profile
+    And the user click on 3 dot icon from the profile
 
     And the user select the "Ignore"
