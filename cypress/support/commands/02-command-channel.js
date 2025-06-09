@@ -5,7 +5,7 @@ Cypress.Commands.add('clickPlusRoom', () => {
 
 
 Cypress.Commands.add('selectChannel', () => {
-  cy.xpath('(//*[contains(text(), "Channel")])[1]').click()
+  cy.get('label.rcx-option').contains('Channel').click()
   
 })
 

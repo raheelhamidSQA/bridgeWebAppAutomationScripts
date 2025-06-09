@@ -6,7 +6,6 @@ When('the user is able to create the plus icon button', () => {
 
 Then('the user click "Channel"', () => {
   cy.selectChannel()
-  
 
 });
 
