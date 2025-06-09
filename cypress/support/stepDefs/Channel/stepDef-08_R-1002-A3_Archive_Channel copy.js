@@ -23,7 +23,6 @@ And('the user enable the Archive toggle', () => {
 
 And('the user click on save button', () => {
   cy.get('button[type="submit"]').click({force:true,});
-  // div > button.rcx-box.rcx-box--full.rcx-button--primary.rcx-button.rcx-button-group__item
   cy.wait(5000)
   
 });

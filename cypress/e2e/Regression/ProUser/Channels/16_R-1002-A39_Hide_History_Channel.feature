@@ -4,7 +4,7 @@ Feature: Hide History Channel
 Background:
   Given the pro user is able to login
 
-  Scenario: 16_R-1002-A39_Hide_History_Channel
+  Scenario: R-1002-A39_Hide_History_Channel
     When the user is able to create the plus icon button
     Then the user click "Channel"
     Then the user can enter the name of the channel

@@ -18,6 +18,7 @@ require('cypress-xpath');
 import './commands/01-command-login';
 import './commands/02-command-channel';
 import './commands/03-command-generic';
+import './commands/04-command-discussion';
 
 
 
@@ -35,10 +36,13 @@ Cypress.on('uncaught:exception', (err) => {
   });
 
   Cypress.on('uncaught:exception', (err) => {
-    // Only ignore the error-invalid-subscription exception
-    if (err.message && err.message.includes('error-invalid-subscription')) {
-      return false; // prevents Cypress from failing the test
+    // Ignore the specific "error-invalid-subscription" exception
+    if (
+      (err.message && err.message.includes('error-invalid-subscription')) ||
+      (err.error && err.error === 'error-invalid-subscription')
+    ) {
+      return false; // Prevents Cypress from failing the test
     }
-    // Allow other exceptions to fail the test
+    // Let other errors fail the test
     return true;
   });
