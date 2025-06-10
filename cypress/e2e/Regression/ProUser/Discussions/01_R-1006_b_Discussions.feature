@@ -20,7 +20,7 @@ Background:
     And the user can select the members
     And the user click on create button
     Then the channel should display
-    And the user sends the message to the channel "This is a test message for Star Messages."
+    And the user sends the message to the channel "This is a test message for Discussion Messages."
 
     And the user hover the message and click on "More"
 

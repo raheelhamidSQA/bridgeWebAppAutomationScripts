@@ -19,11 +19,7 @@ import './commands/01-command-login';
 import './commands/02-command-channel';
 import './commands/03-command-generic';
 import './commands/04-command-discussion';
-
-
-
-
-
+import  './commands/05-command-directMessage';
 
 
 Cypress.on('uncaught:exception', (err) => {
