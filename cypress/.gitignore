@@ -1,0 +1,49 @@
+# macOS system files
+.DS_Store
+
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variable files
+.env
+.env.*
+
+# Output of build tools
+dist/
+build/
+out/
+
+# VSCode and other editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Yarn
+.yarn/
+.yarnrc.yml
+
+# Test output
+test-output/
